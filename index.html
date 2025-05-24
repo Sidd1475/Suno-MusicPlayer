@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Suno - Music Player</title>
+
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+</head>
+
+<body>
+    <div class="container flex bg-black">
+        <div class="left  ">
+          
+            <div class="home bg-grey rounded m1 p1">
+                <div class="close">
+                    <img src="cross.svg" alt="" width="25px" class="invert close">
+                </div>
+                <div class="logo"><img class="invert" src="mylogo.svg" alt="" width="30px">
+                <h4>
+                    Suno
+                </h4></div>
+                <ul>
+                    <li><img class="invert" src="home.svg" alt="Home">Home</li>
+                    <li><img class="invert" src="search.svg" alt="Search">Search</li>
+                </ul>
+            </div>
+            <div class="library bg-grey rounded m1 p1">
+
+                <div class="heading">
+                    <h3>Your Library</h3>
+
+                  
+                </div>
+
+                <div class="songsList">
+                    <ul>
+                        <!-- <li>
+                            <img src="music.svg" alt="" width="20px" class="invert">
+                            <div class="info">
+                                <div>SongName</div>
+                                <div>SongArtist</div>
+                            </div>
+                            <div class="playnow">
+                                <span> Play Now </span>
+                                <img src="play.svg" alt="" width="30px" class="invert">
+                            </div>
+                        </li>     -->
+                    </ul>
+                </div>
+
+
+            
+
+            <div class="footer">
+                <a href="https://www.spotify.com/in-en/legal/">Legal</a><br>
+                <a href="https://www.spotify.com/in-en/safetyandprivacy/">Safety</a><br>
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/">Privacy Policy</a><br>
+                <a href="https://www.spotify.com/in-en/legal/cookies-policy/">Cookies</a><br>
+                <a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3">About Ads</a><br>
+                <!-- <a href="https://www.spotify.com/in-en/accessibility/">Accessibility</a><br> -->
+                <a href="https://www.spotify.com/legal/cookies-policy/" target="_blank" rel="noopener">Cookies</a><br>
+            </div>
+            </div>
+        </div>
+        <div class="right bg-grey rounded  ">
+          
+                <div class="nav">
+                    <div class="grp">
+                        <div class="hamburgercontainer">
+                            <img src="hamburger.svg" alt="" width="20px" class="hamburger invert">
+                        </div>
+                      
+                    
+                    <div class="arrows"><img src="arrow-left.svg" class="invert" alt="" width="20px">
+                        <img src="arrow-right.svg" class="invert" alt="" width="20px"></div>
+                    </div>
+                    <div class="buttons">
+                        <button class="Signupbtn">Sign Up</button>
+                        <button class="loginbtn">Log in</button>
+                    </div>
+                </div>
+            
+            <div class="MyPlaylists">
+
+                <h1>My Playlists</h1>
+                
+                <div class="cardContainer" >
+                   
+                    <!-- <div class="card" data-folder="ncs">
+
+                        <div class="play" >
+                            <img src="Play-button.svg" alt="">
+                        </div>
+                      
+                        <img src="Sonunigam.jpg" alt="" >
+                        <h2>Arijit Hits!</h2>
+                        <p>Popular songs of Arijit Singh</p>
+
+
+                    </div>
+
+                    <div class="card" data-folder="cs">
+
+                        <div class="play">
+                            <img src="Play-button.svg" alt="">
+                        </div>
+
+                        <img src="ari.jpg" alt="" >
+                        <h2>Arijit Hits!</h2>
+                        <p>Popular songs of Arijit Singh</p>
+
+                    </div>
+            
+                   -->
+             
+
+                    
+     
+                </div>
+               
+                
+            </div> 
+            <div class="playbar" >
+                <div class="abovebar">
+
+                
+                    <div class="songinfo">  
+                        
+                    </div>
+                    <div class="songButton invert" >
+                        <img id="prev"class="prev" src="previous.svg" alt="" width="35px">
+                    <img id="play"src="play.svg" alt="" width="28px">
+                    <img id="next" class="next" src="next.svg" alt="" width="35px">
+                    </div>
+                    <div class="duration_vol">
+                    <div class="songtime">
+    
+                    </div>
+                    <div class="volume">
+                        <img src="volume.svg" alt="" width="30px" class="invert" >
+                        <div class="range">
+                            <input type="range" name="volume" id="" >
+                        </div>
+                    </div>
+                </div>
+                </div>  
+                <div class="seekbar">
+                    
+                    <div class="circle">
+
+                    </div>
+                </div>
+               
+
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+
+</html>

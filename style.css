@@ -1,0 +1,406 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Roboto;
+
+}
+
+
+:root{
+    --a:0; 
+}
+
+body{
+   background-color: black;
+    
+}
+
+
+.close{
+    display: none;
+}
+.left{
+    width: 25vw;
+    padding: 10px;
+    z-index: 1;
+    position: relative;
+    
+    
+}
+
+
+.home ul li{
+    display: flex;
+    gap: 15px;
+    width: 14px;
+    list-style: none;
+    padding-top: 14px;
+}
+.heading{
+    display: flex;
+    width: 100%;
+    gap: 15px;
+    padding: 23px 14px;
+    font-weight: bold;
+    align-items: center;
+    font-size: 13px;
+}
+
+.library{
+
+    min-height: 73vh;
+    position: relative;
+}
+
+.footer{
+    display: flex;
+    font-size: 10px;
+    gap: 13px;
+    position: absolute;
+    bottom: 0;
+    padding: 10px 0;
+    
+}
+.footer a{
+    color: grey;
+}
+.right{
+    width: 75vw;
+    
+    margin: 16px 0;
+    position: relative;
+    
+    
+    
+}
+
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(34, 33, 33);
+   padding: 10px;
+  
+}
+.MyPlaylists{
+    padding: 16px;
+    /* position: relative; */
+    
+    
+}
+
+.cardContainer{
+    margin: 30px;
+    display: flex;
+    gap: 10px;
+    flex: row;
+    flex-wrap: wrap;
+    max-height: 50vh;
+    position: relative;
+    overflow-y: auto;
+    
+}
+
+.card{
+    height: 250px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: rgb(32, 31, 31);
+   position: relative;
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+   gap: 12px;
+   transition: all 1s;
+    
+   
+}
+
+
+.card img{
+    width: 100% ;
+    height: 60%;
+    border-radius: 7px;
+    object-fit: contain;
+    
+}
+
+.card:hover{
+    background-color: rgb(47, 47, 47);
+    cursor: pointer;
+    --a:1;
+}
+.play{
+    width: 40px;
+    position: absolute;
+    top: 160px;
+    right: 12px;
+    opacity: var(--a);
+    transition: all 1s ease-out;
+}
+
+.Signupbtn{
+   background-color: rgb(30, 29, 29);
+   color: white;
+   font-weight: bold;
+   border: none;
+   outline: none;
+   padding: 10px 12px;
+   cursor: pointer;
+}
+.Signupbtn:hover{
+    font-size: 14px ;
+    color: rgb(88, 87, 87);
+    background-color: rgb(34, 33, 33);
+}
+.loginbtn{
+  background-color: white;
+  border-radius: 10px;
+  padding: 10px 12px;
+   border: none;
+   outline: none;
+   cursor: pointer;
+}
+.logo{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    color: rgb(253, 244, 228);
+    font-family:cursive;
+}
+.loginbtn:hover{
+    font-weight: bold;
+    padding: 10px 14px;
+}
+input[type="range"] {
+    accent-color: #ffdd94; /* Nice green for dark theme */
+  }
+
+.playbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 12px;
+    position: fixed;
+    bottom: 30px;
+    background-color: rgb(52, 51, 51);
+    width: 70vw;
+    border-radius: 15px;
+    min-height: 30px;
+   margin-left: 20px;
+    padding:12px;
+
+}
+
+.songsList ul{
+    padding: 0 22px;
+    
+}
+.hamburger{
+    display: none;
+}
+
+.songsList ul li{
+    list-style-type: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    cursor: pointer;
+    border: 1px solid white;
+    margin: 12px 0;
+    padding: 12px;
+    border-radius: 5px;
+    object-fit: contain;
+    overflow: hidden;
+}
+
+.playnow{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    left: 10;
+
+}
+
+.playnow span{
+    font-size: 10px;
+    width: 45px;
+    padding: 12px;
+}
+
+.songsList{
+    max-height: 484px;
+    overflow: scroll;
+    margin: 44px 0;
+}
+
+.seekbar{
+    height: 2px;
+    width: 98%;
+    background: rgb(241, 240, 240);
+    border: 2px solid white;
+    border-radius: 10px;
+    font-weight: bolder;
+    position: absolute;
+    bottom: 6px;
+    cursor: pointer;
+    margin: 4px;
+}
+
+.circle{
+    width: 15px;
+    height: 15px;
+    
+    border-radius: 13px;
+    background-color: white;
+    position: relative;
+    bottom: 8px;
+    left: 0%;
+    transition: left 0.5s;
+}
+.songButton img{
+    cursor: pointer;
+}
+.songButton{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}
+.abovebar{
+    width: 100%;;
+    display: flex;
+    justify-content: space-between;
+    margin: 20px 0;
+    
+    
+}
+
+.duration_vol{
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.volume {
+    display: flex;
+    gap: 14px;
+    align-items: center;
+    cursor: pointer;
+    
+}
+.range input{
+    cursor: pointer;
+    color: rgb(130, 130, 26);
+}
+
+@media (max-width : 1200px) {
+    .left{
+        position: absolute;
+        left: -120%;
+        transition: all 0.3s;
+        width: 380px;
+        z-index: 1;
+        background-color: black;
+        padding: 0;
+    }
+    .card{
+        width: 45vw;
+    }
+
+    .cardContainer{
+        justify-content: center;
+    }
+    .hamburger{
+        display: block;
+    }
+
+    .left .close{
+        position: absolute;
+        right: 0;
+        
+    }
+    .close{
+        display: block;
+    }
+    .playbar{
+        width: 95%;
+        margin-left: 10px;
+    
+        
+        
+        
+    }
+    .right{
+        width: 100vw;
+        height: 100vh;
+    }
+    .hamburger{
+        display: block;
+    }
+    .right{
+        margin:0;
+    }
+   .abovebar{
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+
+   }
+   .songinfo{
+    width: auto;
+   }
+  .songtime{
+    width: auto;
+  
+  }
+  .info div{
+        word-break: break-all;
+
+  }
+  .duration_vol{
+    flex-direction: column;
+    gap: 10px;
+  }
+    }
+
+    @media (max-width : 400px){
+       .card{
+        width: 64vw;
+       }
+       .cardContainer{
+        max-height: 50vh;
+    }
+    .playbar{
+        margin-left: 0px;
+    }
+    }    
+
+
+
+
+.grp{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.hamburgercontainer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+
+
+}
+
+
+.home{
+    position: relative;
+}
