@@ -71,8 +71,8 @@ async function getSongs(folder) {
 const playMusic = (track, pause = false) => {
     // let currentSong = new Audio() ;
     console.log("Track:", track);
-    console.log("Current src:", `/${currfolder}/` + track);
-    currentSong.src = `/${currfolder}/` + track
+    console.log("Current src:", `${currfolder}/` + track);
+    currentSong.src = `${currfolder}/` + track
     if (!pause) {
         currentSong.play()
 
